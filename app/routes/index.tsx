@@ -1,9 +1,16 @@
-import { type LinksFunction } from "@remix-run/node";
+import { type LinksFunction, type MetaFunction } from "@remix-run/node";
 
 import globalStyles from "@/styles/global.css";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: globalStyles }];
+};
+
+export const meta: MetaFunction = () => {
+  return {
+    description: "Index description",
+    keywords: "remix, react, javascript",
+  };
 };
 
 function Home() {
