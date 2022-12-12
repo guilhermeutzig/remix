@@ -25,6 +25,7 @@ function Document({ children, title }: Props) {
       </head>
       <body>
         {children}
+        {/* As the name says, LiveReload allows live reload for development */}
         {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>

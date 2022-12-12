@@ -2,6 +2,10 @@ import { type LinksFunction, type MetaFunction } from "@remix-run/node";
 
 import globalStyles from "@/styles/global.css";
 
+// These two variables are just examples since
+// they are being exported in root.tsx, which
+// makes it apply globally, but they can be
+// individually imported in each route.
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: globalStyles }];
 };
