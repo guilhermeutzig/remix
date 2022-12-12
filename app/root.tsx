@@ -1,11 +1,14 @@
 import { Outlet } from "@remix-run/react";
 
-import Document from "./document";
+import Layout from "@/components/Layout";
+import Document from "@/document";
 
 function App() {
   return (
     <Document>
-      <Outlet />
+      <Layout>
+        <Outlet />
+      </Layout>
     </Document>
   );
 }
